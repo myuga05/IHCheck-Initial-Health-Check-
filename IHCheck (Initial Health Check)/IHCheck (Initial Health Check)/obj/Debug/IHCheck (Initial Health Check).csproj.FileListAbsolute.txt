@@ -5,3 +5,10 @@ C:\Users\asus\OneDrive\Dokumen\Capek Nugas\Semester 2\Struktur Data\FInal Projec
 C:\Users\asus\OneDrive\Dokumen\Capek Nugas\Semester 2\Struktur Data\FInal Project\IHCheck-Initial-Health-Check-\IHCheck (Initial Health Check)\IHCheck (Initial Health Check)\obj\Debug\IHCheck (Initial Health Check).csproj.CoreCompileInputs.cache
 C:\Users\asus\OneDrive\Dokumen\Capek Nugas\Semester 2\Struktur Data\FInal Project\IHCheck-Initial-Health-Check-\IHCheck (Initial Health Check)\IHCheck (Initial Health Check)\obj\Debug\IHCheck (Initial Health Check).exe
 C:\Users\asus\OneDrive\Dokumen\Capek Nugas\Semester 2\Struktur Data\FInal Project\IHCheck-Initial-Health-Check-\IHCheck (Initial Health Check)\IHCheck (Initial Health Check)\obj\Debug\IHCheck (Initial Health Check).pdb
+C:\Users\HP\Documents\PROJECT IHCheck\IHCheck-Initial-Health-Check-\IHCheck (Initial Health Check)\IHCheck (Initial Health Check)\bin\Debug\IHCheck (Initial Health Check).exe.config
+C:\Users\HP\Documents\PROJECT IHCheck\IHCheck-Initial-Health-Check-\IHCheck (Initial Health Check)\IHCheck (Initial Health Check)\bin\Debug\IHCheck (Initial Health Check).exe
+C:\Users\HP\Documents\PROJECT IHCheck\IHCheck-Initial-Health-Check-\IHCheck (Initial Health Check)\IHCheck (Initial Health Check)\bin\Debug\IHCheck (Initial Health Check).pdb
+C:\Users\HP\Documents\PROJECT IHCheck\IHCheck-Initial-Health-Check-\IHCheck (Initial Health Check)\IHCheck (Initial Health Check)\obj\Debug\IHCheck (Initial Health Check).csproj.AssemblyReference.cache
+C:\Users\HP\Documents\PROJECT IHCheck\IHCheck-Initial-Health-Check-\IHCheck (Initial Health Check)\IHCheck (Initial Health Check)\obj\Debug\IHCheck (Initial Health Check).csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\PROJECT IHCheck\IHCheck-Initial-Health-Check-\IHCheck (Initial Health Check)\IHCheck (Initial Health Check)\obj\Debug\IHCheck (Initial Health Check).exe
+C:\Users\HP\Documents\PROJECT IHCheck\IHCheck-Initial-Health-Check-\IHCheck (Initial Health Check)\IHCheck (Initial Health Check)\obj\Debug\IHCheck (Initial Health Check).pdb
