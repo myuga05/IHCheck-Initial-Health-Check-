@@ -22,11 +22,19 @@ namespace IHCheck__Initial_Health_Check_
                 Console.WriteLine("1. Add Patient");
                 Console.WriteLine("2. List Patients");
                 Console.WriteLine("3. Remove Patient");
-                Console.WriteLine("4. Exit");
+                Console.WriteLine("4. Search Patient");
+                Console.WriteLine("5. Sortir Patient");
+                Console.WriteLine("6. Exit");
                 // -- Tambahkan variasi menu disini -- //
                 Console.WriteLine("- - - - - - - - - -");
                 Console.Write("Select an option: ");
-                int choice = int.Parse(Console.ReadLine());
+                
+                string input = Console.ReadLine();
+                if (!int.TryParse(input, out int choice))
+                {
+                    Console.WriteLine("Invalid input. Please enter a valid number.");
+                    continue; // Lanjut ke iterasi berikutnya dalam loop
+                }
 
                 switch (choice)
                 {
@@ -41,8 +49,16 @@ namespace IHCheck__Initial_Health_Check_
                         int id = int.Parse(Console.ReadLine());
                         manager.RemovePatientByID(id);
                         break;
-                        // -- Tambahkan Case tambahan untuk variasi menu disini -- //
+                    // -- Tambahkan Case tambahan untuk variasi menu disini -- //
                     case 4:
+                        Console.Write("Enter ID of patient to search: ");
+                        int p_id = int.Parse(Console.ReadLine());
+                        manager.FindPatient(p_id);
+                        break;
+                    case 5:
+                        manager.SortPatientsByID();
+                        break;
+                    case 6:
                         running = false;
                         break; // close program
                     default: 

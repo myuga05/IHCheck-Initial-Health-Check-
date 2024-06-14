@@ -24,8 +24,6 @@ namespace IHCheck__Initial_Health_Check_.IHCheck_Main
         {
             return $"ID: {Id}\nName: {Name}\nAge: {Age}\nGender: {Gender}\nBlood Type: {BloodType}\nWeight: {Weight}\nMedical History: {MedicalHistory}\nCurrent Disease: {CurrentDisease}\nTreatment: {Treatment}";
         }
-
-
     }
 
     // Class PatientManager Untuk seluruh konsep dan mekanisme program
@@ -39,20 +37,18 @@ namespace IHCheck__Initial_Health_Check_.IHCheck_Main
         {
             Patient newPatient = new Patient();
 
-            Console.Write("Masukan ID: ");
-            newPatient.Id = int.Parse(Console.ReadLine());
+            newPatient.Id = InputPatient.GetIntInput("Masukan ID: ");
 
             Console.Write("Masukan Nama: ");
             newPatient.Name = Console.ReadLine();
 
-            Console.Write("Masukan Umur: ");
-            newPatient.Age = int.Parse(Console.ReadLine());
+            newPatient.Age = InputPatient.GetIntInput("Masukan Umur: ");
 
-            Console.Write("Masukan Golongan darah: ");
-            newPatient.BloodType = Console.ReadLine();
+            newPatient.Gender = InputPatient.ValidateGenderInput();
 
-            Console.Write("Masukan Berat Badan: ");
-            newPatient.Weight = double.Parse(Console.ReadLine());
+            newPatient.BloodType = InputPatient.ValidateBloodTypeInput();
+
+            newPatient.Weight = InputPatient.GetDoubleInput("Masukan Berat Badan: ");
 
             Console.Write("Masukan Riwayat Penyakit: ");
             newPatient.MedicalHistory = Console.ReadLine();
@@ -93,12 +89,95 @@ namespace IHCheck__Initial_Health_Check_.IHCheck_Main
         // Method untuk menampilkan Pasien yang ada
         public void ListPatients()
         {
-            foreach (var patient in patients)
+
+            if (patients.Count == 0)
             {
                 Console.WriteLine();
-                Console.WriteLine(patient);
-                Console.WriteLine();
+                Console.WriteLine("No patients found.");
             }
+            else
+            {
+                foreach (var patient in patients)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine(patient);
+                    Console.WriteLine();
+                }
+            }
+        }
+
+        public void FindPatient(int id)
+        {
+            var currentNode = patients.First;
+
+            while (currentNode != null)
+            {
+                if (currentNode.Value.Id == id)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Patient found:");
+                    Console.WriteLine(currentNode.Value); 
+                    Console.WriteLine();
+                    return;
+                }
+                currentNode = currentNode.Next;
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Patient not found.");
+        }
+
+        private void QuickSort(List<Patient> list, int left, int right)
+        {
+            if (left < right)
+            {
+                int pivotIndex = Partition(list, left, right);
+                QuickSort(list, left, pivotIndex - 1);
+                QuickSort(list, pivotIndex + 1, right);
+            }
+        }
+
+        private int Partition(List<Patient> list, int left, int right)
+        {
+            int pivot = list[right].Id;
+            int i = left - 1;
+
+            for (int j = left; j < right; j++)
+            {
+                if (list[j].Id <= pivot)
+                {
+                    i++;
+                    Swap(list, i, j);
+                }
+            }
+
+            Swap(list, i + 1, right);
+            return i + 1;
+        }
+
+        private void Swap(List<Patient> list, int index1, int index2)
+        {
+            Patient temp = list[index1];
+            list[index1] = list[index2];
+            list[index2] = temp;
+        }
+
+        public void SortPatientsByID()
+        {
+            if (patients.Count == 0)
+            {
+                Console.WriteLine();
+                Console.WriteLine("No patients found, Please add patients first!");                
+                return;
+            }
+
+            List<Patient> patientList = new List<Patient>(patients);
+            QuickSort(patientList, 0, patientList.Count - 1);
+
+            patients = new LinkedList<Patient>(patientList);
+
+            Console.WriteLine();
+            Console.WriteLine("Patients sorted by ID successfully!");
         }
     }
 }

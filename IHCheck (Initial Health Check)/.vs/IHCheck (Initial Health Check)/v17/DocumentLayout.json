@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\PROJECT IHCheck\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\",
+  "WorkspaceRootPath": "C:\\Users\\asus\\OneDrive\\Dokumen\\Capek Nugas\\Semester 2\\Struktur Data\\FInal Project\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A20FE5A8-0C83-4CE5-B828-68599C6ED792}|IHCheck (Initial Health Check)\\IHCheck (Initial Health Check).csproj|c:\\users\\hp\\documents\\project ihcheck\\ihcheck-initial-health-check-\\ihcheck (initial health check)\\ihcheck (initial health check)\\ihcheck main\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A20FE5A8-0C83-4CE5-B828-68599C6ED792}|IHCheck (Initial Health Check)\\IHCheck (Initial Health Check).csproj|solutionrelative:ihcheck (initial health check)\\ihcheck main\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A20FE5A8-0C83-4CE5-B828-68599C6ED792}|IHCheck (Initial Health Check)\\IHCheck (Initial Health Check).csproj|C:\\Users\\HP\\Documents\\PROJECT IHCheck\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\ihcheck (initial health check)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A20FE5A8-0C83-4CE5-B828-68599C6ED792}|IHCheck (Initial Health Check)\\IHCheck (Initial Health Check).csproj|c:\\users\\asus\\onedrive\\dokumen\\capek nugas\\semester 2\\struktur data\\final project\\ihcheck-initial-health-check-\\ihcheck (initial health check)\\ihcheck (initial health check)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A20FE5A8-0C83-4CE5-B828-68599C6ED792}|IHCheck (Initial Health Check)\\IHCheck (Initial Health Check).csproj|solutionrelative:ihcheck (initial health check)\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A20FE5A8-0C83-4CE5-B828-68599C6ED792}|IHCheck (Initial Health Check)\\IHCheck (Initial Health Check).csproj|C:\\Users\\HP\\Documents\\PROJECT IHCheck\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\ihcheck (initial health check)\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A20FE5A8-0C83-4CE5-B828-68599C6ED792}|IHCheck (Initial Health Check)\\IHCheck (Initial Health Check).csproj|C:\\Users\\asus\\OneDrive\\Dokumen\\Capek Nugas\\Semester 2\\Struktur Data\\FInal Project\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\ihcheck (initial health check)\\ihcheck main\\inputpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A20FE5A8-0C83-4CE5-B828-68599C6ED792}|IHCheck (Initial Health Check)\\IHCheck (Initial Health Check).csproj|solutionrelative:ihcheck (initial health check)\\ihcheck main\\inputpatient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A20FE5A8-0C83-4CE5-B828-68599C6ED792}|IHCheck (Initial Health Check)\\IHCheck (Initial Health Check).csproj|C:\\Users\\asus\\OneDrive\\Dokumen\\Capek Nugas\\Semester 2\\Struktur Data\\FInal Project\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\ihcheck (initial health check)\\ihcheck main\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A20FE5A8-0C83-4CE5-B828-68599C6ED792}|IHCheck (Initial Health Check)\\IHCheck (Initial Health Check).csproj|solutionrelative:ihcheck (initial health check)\\ihcheck main\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A20FE5A8-0C83-4CE5-B828-68599C6ED792}|IHCheck (Initial Health Check)\\IHCheck (Initial Health Check).csproj|C:\\Users\\asus\\OneDrive\\Dokumen\\Capek Nugas\\Semester 2\\Struktur Data\\FInal Project\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\ihcheck (initial health check)\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A20FE5A8-0C83-4CE5-B828-68599C6ED792}|IHCheck (Initial Health Check)\\IHCheck (Initial Health Check).csproj|solutionrelative:ihcheck (initial health check)\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,37 +34,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Patient.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\PROJECT IHCheck\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\IHCheck (Initial Health Check)\\IHCheck Main\\Patient.cs",
-              "RelativeDocumentMoniker": "IHCheck (Initial Health Check)\\IHCheck Main\\Patient.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\PROJECT IHCheck\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\IHCheck (Initial Health Check)\\IHCheck Main\\Patient.cs",
-              "RelativeToolTip": "IHCheck (Initial Health Check)\\IHCheck Main\\Patient.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAAAG8AAAADAAAA",
+              "DocumentIndex": 1,
+              "Title": "InputPatient.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\OneDrive\\Dokumen\\Capek Nugas\\Semester 2\\Struktur Data\\FInal Project\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\IHCheck (Initial Health Check)\\IHCheck Main\\InputPatient.cs",
+              "RelativeDocumentMoniker": "IHCheck (Initial Health Check)\\IHCheck Main\\InputPatient.cs",
+              "ToolTip": "C:\\Users\\asus\\OneDrive\\Dokumen\\Capek Nugas\\Semester 2\\Struktur Data\\FInal Project\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\IHCheck (Initial Health Check)\\IHCheck Main\\InputPatient.cs",
+              "RelativeToolTip": "IHCheck (Initial Health Check)\\IHCheck Main\\InputPatient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T10:18:45.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-14T16:25:40.277Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\OneDrive\\Dokumen\\Capek Nugas\\Semester 2\\Struktur Data\\FInal Project\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\IHCheck (Initial Health Check)\\IHCheck Main\\Patient.cs",
+              "RelativeDocumentMoniker": "IHCheck (Initial Health Check)\\IHCheck Main\\Patient.cs",
+              "ToolTip": "C:\\Users\\asus\\OneDrive\\Dokumen\\Capek Nugas\\Semester 2\\Struktur Data\\FInal Project\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\IHCheck (Initial Health Check)\\IHCheck Main\\Patient.cs",
+              "RelativeToolTip": "IHCheck (Initial Health Check)\\IHCheck Main\\Patient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAL4AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T10:18:45.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\PROJECT IHCheck\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\IHCheck (Initial Health Check)\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\OneDrive\\Dokumen\\Capek Nugas\\Semester 2\\Struktur Data\\FInal Project\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\IHCheck (Initial Health Check)\\Program.cs",
               "RelativeDocumentMoniker": "IHCheck (Initial Health Check)\\Program.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\PROJECT IHCheck\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\IHCheck (Initial Health Check)\\Program.cs",
+              "ToolTip": "C:\\Users\\asus\\OneDrive\\Dokumen\\Capek Nugas\\Semester 2\\Struktur Data\\FInal Project\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\IHCheck (Initial Health Check)\\Program.cs",
               "RelativeToolTip": "IHCheck (Initial Health Check)\\Program.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAQwDAAAABqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-08T09:57:56.691Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Documents\\PROJECT IHCheck\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\IHCheck (Initial Health Check)\\Properties\\AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\asus\\OneDrive\\Dokumen\\Capek Nugas\\Semester 2\\Struktur Data\\FInal Project\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\IHCheck (Initial Health Check)\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "IHCheck (Initial Health Check)\\Properties\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\HP\\Documents\\PROJECT IHCheck\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\IHCheck (Initial Health Check)\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\asus\\OneDrive\\Dokumen\\Capek Nugas\\Semester 2\\Struktur Data\\FInal Project\\IHCheck-Initial-Health-Check-\\IHCheck (Initial Health Check)\\IHCheck (Initial Health Check)\\Properties\\AssemblyInfo.cs",
               "RelativeToolTip": "IHCheck (Initial Health Check)\\Properties\\AssemblyInfo.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
