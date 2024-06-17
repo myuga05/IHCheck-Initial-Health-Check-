@@ -32,21 +32,40 @@ namespace IHCheck__Initial_Health_Check_.IHCheck_Main
         // penerapan Konsep Linked List dalam menambah, menyimpan, dan menghapus data
         private LinkedList<Patient> patients = new LinkedList<Patient>();
 
+        public bool IsIdExist(int id)
+        {
+            return patients.Any(patient => patient.Id == id);
+        }
+
         // Method untuk menambahkan pasien beserta input atribut objek/class pasien
         public void AddPatient()
         {
             Patient newPatient = new Patient();
+            int id;
 
-            newPatient.Id = InputPatient.GetIntInput("Masukan ID: ");
+            // Loop untuk memastikan ID unik
+            while (true)
+            {
+                id = InputPatient.GetIntInput("Masukan ID: ");
+                if (!IsIdExist(id))
+                {
+                    newPatient.Id = id;
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("ID sudah digunakan. Silakan masukkan ID yang unik.");
+                }
+            }
 
             Console.Write("Masukan Nama: ");
             newPatient.Name = Console.ReadLine();
 
             newPatient.Age = InputPatient.GetIntInput("Masukan Umur: ");
 
-            newPatient.Gender = InputPatient.ValidateGenderInput();
+            newPatient.Gender = InputPatient.ValidateGenderInput("Masukan Gender (L/P): ");
 
-            newPatient.BloodType = InputPatient.ValidateBloodTypeInput();
+            newPatient.BloodType = InputPatient.ValidateBloodTypeInput("Masukan Golongan darah (A/B/AB/O): ");
 
             newPatient.Weight = InputPatient.GetDoubleInput("Masukan Berat Badan: ");
 
@@ -60,6 +79,8 @@ namespace IHCheck__Initial_Health_Check_.IHCheck_Main
             newPatient.Treatment = Console.ReadLine();
 
             patients.AddLast(newPatient);
+
+            Console.WriteLine();
 
             Console.WriteLine("Patient added successfully!");
         }
@@ -76,14 +97,16 @@ namespace IHCheck__Initial_Health_Check_.IHCheck_Main
                 if (currentNode.Value.Id == id)
                 {
                     patients.Remove(currentNode);
+                    Console.WriteLine();
                     Console.WriteLine("Patient Removed Successfully!");
-                }
-                else if (currentNode.Value.Id != id)
-                {
-                    Console.WriteLine("Patient with ID {0} Cannot be found.", id);
-                }
+                    return;
+                }                                                                                                               
                 currentNode = currentNode.Next;
-            } 
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Patient with ID {0} Cannot be found.", id);
+
         }
 
         // Method untuk menampilkan Pasien yang ada
@@ -127,14 +150,11 @@ namespace IHCheck__Initial_Health_Check_.IHCheck_Main
             Console.WriteLine("Patient not found.");
         }
 
-        private void QuickSort(List<Patient> list, int left, int right)
+        private void Swap(List<Patient> list, int index1, int index2)
         {
-            if (left < right)
-            {
-                int pivotIndex = Partition(list, left, right);
-                QuickSort(list, left, pivotIndex - 1);
-                QuickSort(list, pivotIndex + 1, right);
-            }
+            Patient temp = list[index1];
+            list[index1] = list[index2];
+            list[index2] = temp;
         }
 
         private int Partition(List<Patient> list, int left, int right)
@@ -155,12 +175,15 @@ namespace IHCheck__Initial_Health_Check_.IHCheck_Main
             return i + 1;
         }
 
-        private void Swap(List<Patient> list, int index1, int index2)
+        private void QuickSort(List<Patient> list, int left, int right)
         {
-            Patient temp = list[index1];
-            list[index1] = list[index2];
-            list[index2] = temp;
-        }
+            if (left < right)
+            {
+                int pivotIndex = Partition(list, left, right);
+                QuickSort(list, left, pivotIndex - 1);
+                QuickSort(list, pivotIndex + 1, right);
+            }
+        }       
 
         public void SortPatientsByID()
         {

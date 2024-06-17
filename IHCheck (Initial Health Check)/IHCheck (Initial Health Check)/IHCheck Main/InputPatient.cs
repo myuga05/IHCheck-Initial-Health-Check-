@@ -19,7 +19,7 @@ namespace IHCheck__Initial_Health_Check_.IHCheck_Main
                     return result;
                 }
                 else
-                {
+                {                    
                     Console.WriteLine("Invalid input. Please enter a valid number.");
                 }
             }
@@ -36,41 +36,41 @@ namespace IHCheck__Initial_Health_Check_.IHCheck_Main
                     return result;
                 }
                 else
-                {
+                {                    
                     Console.WriteLine("Invalid input. Please enter a valid number.");
                 }
             }
         }
 
-        public static string ValidateGenderInput()
+        public static string ValidateGenderInput(string prompt)
         {
             while (true)
             {
-                Console.Write("Masukan Gender (L/P): ");
+                Console.Write(prompt);
                 string genderInput = Console.ReadLine().Trim().ToUpper();
                 if (genderInput == "L" || genderInput == "P")
                 {
                     return genderInput;
                 }
                 else
-                {
+                {                 
                     Console.WriteLine("Invalid input.");
                 }
             }
         }
 
-        public static string ValidateBloodTypeInput()
+        public static string ValidateBloodTypeInput(string prompt)
         {
             while (true)
             {
-                Console.Write("Masukan Golongan darah (A/B/AB/O): ");
+                Console.Write(prompt);
                 string bloodTypeInput = Console.ReadLine().Trim().ToUpper();
                 if (bloodTypeInput == "A" || bloodTypeInput == "B" || bloodTypeInput == "AB" || bloodTypeInput == "O")
                 {
                     return bloodTypeInput;
                 }
                 else
-                {
+                {                    
                     Console.WriteLine("Invalid input.");
                 }
             }
